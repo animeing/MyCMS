@@ -1,0 +1,1 @@
+Sample plugin setting page!

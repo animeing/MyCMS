@@ -1,0 +1,8 @@
+AddHandler application/x-httpd-php .php .css
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteCond %{REQUEST_FILENAME} \.css$ [NC]
+ RewriteRule ^(.*)$ index.php
+
+
+</IfModule>

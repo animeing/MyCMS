@@ -1,0 +1,24 @@
+<Files ~ "^\.(htaccess|htpasswd|ini|zip|pg|csv)$">
+deny from all
+</Files>
+Options -Indexes
+
+php_flag mail.add_x_header off
+
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+
+ RewriteCond %{REQUEST_FILENAME} !^(.*)\.(gif|png|jpg|jpeg|js|css|xml|mp4|avi|bmp|mp3|ogg|wma|wav|m4a)$ [NC]
+ RewriteCond %{REQUEST_URI} !/js/
+ RewriteCond %{REQUEST_URI} !/css/
+ RewriteCond %{REQUEST_URI} !/img/
+ RewriteCond %{REQUEST_URI} !/parts/
+ RewriteCond %{REQUEST_URI} !/strage/
+ RewriteCond %{REQUEST_URI} !/admin/
+ RewriteRule ^(.*)$ temple.php
+
+ RewriteCond %{REQUEST_FILENAME} !^(.*)\.(gif|png|jpg|jpeg|js|css|xml|mp4|avi|bmp|mp3|ogg|wma|wav|m4a)$ [NC]
+ RewriteCond %{REQUEST_URI} /admin/*.*$
+ RewriteRule ^(.*)$ admin-temple.php
+
+</IfModule>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--phpファイルの読み込み先を設定しています。-->
+<scripts>
+    <constant>Constant/SiteConstants.php</constant>
+    <constant>Constant/SiteSetting.php</constant>
+    <constant>Constant/DataBaseConstants.php</constant>
+    
+    <util>Util/ComplessUtil.php</util>
+    <util>Util/StringUtil.php</util>
+    <util>Util/BrowserUtil.php</util>
+    <util>Util/IMimeType.php</util>
+    <util>Util/FileUtil.php</util>
+    <util>Util/MultiLanguage.php</util>
+
+    <base>System/Mail.php</base>
+    <base>System/Base/Iterator/Ilist.php</base>
+    <base>System/Base/Iterator/IteratorBase.php</base>
+    <base>System/Base/Iterator/SimpleIterator.php</base>
+    <base>System/Base/Array/Dictionary.php</base>
+    <base>DB/Base/ISql.php</base>
+    <base>DB/Base/Connector.php</base>
+    <base>DB/Base/SqlCreater.php</base>
+    <base>DB/Base/DtoBase.php</base>
+    <base>DB/Base/DtoToJson.php</base>
+    <base>System/Base/Tags/TagParts/ClassName.php</base>
+    <base>System/Base/Tags/TagParts/Attribute.php</base>
+    <base>System/Base/Tags/TagParts/INode.php</base>
+    <base>System/Base/Tags/TagParts/Node.php</base>
+    <base>System/Base/Tags/TagParts/ICreateElement.php</base>
+    <base>System/Base/Tags/TagParts/CreateBlockElement.php</base>
+    <base>System/Base/Tags/TagParts/CreateValueElement.php</base>
+    <base>System/Base/Tags/TagParts/HttpTagBase.php</base>
+    <base>System/Base/Tags/Anonymous.php</base>
+    <base>System/Base/Tags/Head.php</base>
+    <base>System/Base/Tags/Link.php</base>
+    <base>System/Base/Tags/Meta.php</base>
+    <base>System/Base/Tags/Title.php</base>
+    <base>System/Base/IO/IniWrite.php</base>
+
+    <data table="IAccessTrackingTable.php" dto="AccessTrackingDto.php" dao="AccessTrackingDao.php" />
+    <data table="IPaginationTable.php" dto="PaginationDto.php" dao="PaginationDao.php" />
+    <data table="IExtensionTable.php" dto="ExtensionDto.php" dao="ExtensionDao.php" />
+    <data table="IUsers.php" dto="UsersDto.php" dao="UsersDao.php" />
+    <data table="IContentTable.php" dto="ContentDto.php" dao="ContentDao.php" />
+    <sub>System/Post/PostManager.php</sub>
+    <sub>Content/HttpHeader.php</sub>
+    <sub>Content/IContent.php</sub>
+    <sub>Content/Parts/IPagination.php</sub>
+    <sub>Content/Parts/DBPagination.php</sub>
+    <sub>Content/Parts/LocalFilePagination.php</sub>
+    <sub>Content/ThemeFinder.php</sub>
+    <sub admin="Content/Admin/" nomal="Content/" readName="Menu.php" />
+    <sub admin="Content/Admin/" nomal="Content/" readName="Functions.php" />
+    <sub admin="System/Loader/Admin/" nomal="System/Loader/" readName="ThemeLoader.php" />
+    <sub admin="Content/Admin/" nomal="Content/" readName="Content.php" />
+    <sub>System/Extension/ExtensionManager.php</sub>
+    
+
+</scripts>

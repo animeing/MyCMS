@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, input, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video, header, content, footer{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a,span,p,h1,h2,h3,h4,h5,h6,blockquote,
+small{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "Meiryo", Helvetica, Arial, Verdana, sans-serif;
+}
+
+html,body {
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, input, button, select, option{
+    outline: none;
+    border: none;
+    resize: none;
+}
+textarea{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    resize: none;
+}
+button,
+input[type="submit"],
+input[type="button"]{
+    cursor: pointer;
+    text-align: center;
+    background: rgba(221, 221, 221, 0);
+    border: 1px solid #000;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: none;
+}
+
+#fixed-window{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    width: 100vw;
+}
+  
+.message-box{
+    left: 0;
+    top: 0px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    max-height: 500px;
+    overflow: hidden;
+    z-index: 10;
+    background: rgba(216, 216, 216, 0.959);
+}
+  
+.message-box,
+.message-box > * {
+    user-select: none;
+    transition: all 300ms 0s ease;
+}
+  
+.message-box > *{
+    padding: 0;
+    border: none;
+}
+
+.height-hide{
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.content404{
+    text-align: center;
+}
+
+.form{
+    height: 100%;
+    line-height: 40px;
+}
+
+.form > div > div {
+    text-align: center;
+}
+
+.form input{
+    transition: 0.5s;
+    min-width: calc(100% - 150px);
+    height: 2em;
+    background-color: rgba(255, 255, 255, 0.185);
+    border: rgba(0, 0, 0, 0.342) solid 1px ;
+}
+
+.form input[type="submit"],
+.form input[type="button"]{
+    border: #000 solid 1px ;
+}
+
+.form input:hover,
+ul.menu > li:hover{
+    background-color: rgba(173, 173, 173, 0.199);
+}
+
+.form .title{
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+
+.form button{
+    width: 100%;
+}
+
+#main-menu-block{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.menu > li{
+    transition: 0.5s;
+    list-style-type: none;
+    flex-grow: 1;
+    text-align: center;
+    height: inherit;
+    border: #000 solid 1px;
+}
+
+ul.menu > li > *{
+    display: block;
+    height: inherit;
+    color: #000;
+}
+
+.setting{
+    display: block;
+    width: calc(100% - 10px);
+}
+
+.setting input{
+    margin: 0 calc(150px / 2);
+    padding: 5px;
+}
+
+.infomation{
+    border-bottom: #000 solid 1px;
+}
+
+.block{
+    padding-bottom: 30px;
+}

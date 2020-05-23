@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--phpファイルの読み込み先を設定しています。-->
+<scripts>
+    <constant>Constant/SiteConstants.php</constant>
+    <constant>Constant/SiteSetting.php</constant>
+
+    <util>Util/StringUtil.php</util>
+    <util>Util/BrowserUtil.php</util>
+    <util>Util/IMimeType.php</util>
+    <util>Util/FileUtil.php</util>
+    
+    <base>DB/Base/ISql.php</base>
+    <base>DB/Base/Connector.php</base>
+    <base>DB/Base/SqlCreater.php</base>
+    <base>DB/Base/DtoBase.php</base>
+
+    <data table="IPaginationTable.php" dto="PaginationDto.php" dao="PaginationDao.php" />
+    <data table="IExtensionTable.php" dto="ExtensionDto.php" dao="ExtensionDao.php" />
+    <data table="IUsers.php" dto="UsersDto.php" dao="UsersDao.php" />
+    
+    <sub>System/Extension/ExtensionManager.php</sub>
+
+</scripts>
